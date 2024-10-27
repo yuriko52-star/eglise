@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Cake;
+use App\Http\Requests\CakeRequest;
 
 class CakeController extends Controller
 {
@@ -11,12 +12,12 @@ class CakeController extends Controller
     {
         return view ('index');
     }
-    public function confirm(Request $request)
+    public function confirm(CakeRequest $request)
     {
         $cake = $request->only(['name','email','tel','number']);
         return view('confirm',compact('cake'));
     }
-    public function store(Request $request )
+    public function store(CakeRequest $request )
     {
         $cake = $request->only(['name','email','tel','number']);
         Cake::create($cake);

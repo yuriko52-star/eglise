@@ -19,7 +19,12 @@
                 <span class="cake-form__required">必須</span>
             </div>
             <div class="cake-form__item">
-                <input class="cake-form__item-input" type="text" name="name" placeholder="てすとアリス"value="">
+                <input class="cake-form__item-input" type="text" name="name" placeholder="てすとアリス"value="{{ old('name') }}">
+            </div>
+            <div class="form__error">
+                @error('name')
+                {{ $message }}
+                @enderror
             </div>
         </div>
  <div class="cake-form__group">
@@ -28,7 +33,12 @@
                 <span class="cake-form__required">必須</span>
             </div>
             <div class="cake-form__item">
-                <input class="cake-form__item-input" type="text" name="email" placeholder="test@example.com "value="">
+                <input class="cake-form__item-input" type="text" name="email" placeholder="test@example.com "value="{{ old('email') }}">
+            </div>
+            <div class="form-error">
+                @error('email')
+                {{ $message }}
+                @enderror
             </div>
         </div>
          <div class="cake-form__group">
@@ -37,7 +47,12 @@
                 <span class="cake-form__required">必須</span>
             </div>
             <div class="cake-form__item">
-                <input class="cake-form__item-input"type="text" name="tel" placeholder="0123456789"value="">
+                <input class="cake-form__item-input"type="text" name="tel" placeholder="0123456789"value="{{ old('tel') }}">
+            </div>
+            <div class="form-error">
+                @error('tel')
+                {{ $message }}
+                @enderror  
             </div>
         </div>
          <div class="cake-form__group">
@@ -46,7 +61,12 @@
                 <span class="cake-form__required">必須</span>
             </div>
             <div class="cake-form__item">
-                <input class="cake-form__item-input"type="text" name="number" placeholder="1"value="">
+                <input class="cake-form__item-input"type="text" name="number" placeholder="1"value="{{ old('number') }}">
+            </div>
+            <div class="form-error">
+                @error('number')
+                {{ $message }}
+                @enderror  
             </div>
         </div>
         <div class="cake-form__button">
