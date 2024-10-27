@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Cake;
 
 class CakeController extends Controller
 {
@@ -18,6 +19,8 @@ class CakeController extends Controller
     public function store(Request $request )
     {
         $cake = $request->only(['name','email','tel','number']);
+        Cake::create($cake);
+        return view ('thanks');
         
     }
 }
