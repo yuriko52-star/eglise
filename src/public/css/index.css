@@ -1,0 +1,55 @@
+.cake__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+.cake__heading {
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+.form {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+.form__label--required {
+    margin-left: 5px;
+    padding: 4px 6px;
+    border-radius: 3px;
+    background: #fafafa;
+    color: #aaa;
+}
+.form__input--text input {
+    padding: 10px;
+    width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+
+    appearance: none;
+    height:40px ;
+}
+.form__error {
+    color: #ff0000;
+    height: 20px;
+    text-align: left;
+}
+.form__button {
+    margin-top: 30px;
+}
+.form__button-submit {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
