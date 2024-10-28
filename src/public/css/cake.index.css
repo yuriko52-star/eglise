@@ -1,0 +1,42 @@
+svg.w-5.h-5 {
+    /*paginateメソッドの矢印の大きさ調整のために追加*/
+    width: 30px;
+    height: 30px;
+}
+.cake-list__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+.cake-ist__heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.cake-list__table {
+    border: 1px solid #ddd;
+}
+.cake-list__table-inner {
+    width: 100%;
+}
+.cake-list__table-header {
+    padding: 15px;
+    width: 20%;
+    border-bottom: 1px solid #ddd;
+    background-color: #eee;
+    font-weight: bold;
+    
+}
+.cake-list__table-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.cake-list__table-item input {
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+.pagination {
+    text-align: center;
+    margin: 30px auto;
+}

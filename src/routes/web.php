@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CakeController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,8 @@ Route::get('/', function () {
 Route::get('/',[CakeController::class,'index']);
 Route::post('/cakes/confirm',[CakeController::class,'confirm']);
 Route::post('/cakes',[CakeController::class,'store']);
+Route::middleware('auth')->group(function() {
+    Route::get('/',[AuthController::class,'index']);
+});
+Route::get('/cake/all',[CakeController::class,'showAll']);
+

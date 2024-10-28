@@ -11,13 +11,19 @@
     justify-content: space-between;
     align-items: center;
 }
-.header__logo ,
-.header__nav {
+.header__logo {
     color: #fff;
     text-decoration: none;
-    
-}
-.header__logo {
     font-size: 24px;
     font-weight: bold;
+}
+.header__utilitie nav {
+    width: 18%;
+}
+.header-nav__button {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
 }

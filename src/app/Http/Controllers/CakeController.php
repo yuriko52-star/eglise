@@ -24,4 +24,9 @@ class CakeController extends Controller
         return view ('thanks');
         
     }
+    public function showAll()
+    {
+        $cakes = Cake::Paginate(5);
+        return view('cake.index',compact('cakes'));
+    }
 }

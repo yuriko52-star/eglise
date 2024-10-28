@@ -7,7 +7,7 @@
 @section('content')
 <div class="confirm__content">
     <div class="confirm__heading">
-        <h2>ご予約確認内容</h2>
+        <h2>ご予約内容確認</h2>
     </div>
     <form action="/cakes" class="form" method="post">
         @csrf
